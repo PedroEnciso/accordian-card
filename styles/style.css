@@ -4,6 +4,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1d1e35;
 }
 
 body {
@@ -11,6 +18,53 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(to bottom, #af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background: #fff;
+  height: 500px;
+  width: 90%;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.144);
+          box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.144);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .illustration-desktop {
+  display: none;
+}
+
+.container .illustration-mobile {
+  -webkit-transform: translateY(-53%);
+          transform: translateY(-53%);
+}
+
+.container .illustration-mobile .mobile-background {
+  position: absolute;
+  -webkit-transform: translate(12%, 100%);
+          transform: translate(12%, 100%);
 }
 
 .attribution {
